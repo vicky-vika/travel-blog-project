@@ -1,10 +1,10 @@
 :root {
   /* Color Palette */
-  --primary-color: #6d6460;
+  --primary-color: #f9f3dd;
   --secondary-color: #8ea39f;
   --accent-color: #0a5372;
   --text-color: #120a11;
-  --background-color: #f9f3dd;
+  --background-color: #6d6460;
 
   /* Font Sizes */
   --font-small: 0.875rem; /* 14px */
@@ -17,6 +17,10 @@
   --spacing-medium: 1rem; /* 16px */
   --spacing-large: 2rem; /* 32px */
   --spacing-xlarge: 4rem; /* 64px */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -41,6 +45,15 @@ h1 {
   color: var(--accent-color);
   margin-bottom: var(--spacing-large);
   padding-right: 2rem;
+}
+
+h2 {
+  font-family: "Homemade Apple", cursive;
+  font-size: var(--font-xlarge);
+}
+
+p {
+  font-family: "Epilogue", sans-serif;
 }
 
 .hero {
@@ -122,3 +135,86 @@ h1 {
 }
 
 /* Country Page */
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: end;
+  color: var(--text-color);
+}
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modalContent {
+  margin-top: 20px;
+  background-color: var(--background-color);
+  max-width: 600px;
+  position: relative;
+  border-radius: 20px;
+}
+
+#country-gallery {
+  text-align: center;
+}
+#country-gallery img {
+  max-width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+#country-gallery img:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+body.blur #country-gallery,
+body.blur .country-description {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+#bigImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background-color: var(--background-color);
+  opacity: 1;
+  border-radius: 20px;
+  z-index: 100;
+}
+#closeButton {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--accent-color);
+}
+#closeButton:hover {
+  color: var(--background-color);
+}
+#closeButton:active {
+  box-shadow: none;
+}
+
+#modalContent > p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: var(--primary-color);
+  background-color: rgb(142, 163, 159, 0.7);
+  width: calc(100% - 40px);
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
