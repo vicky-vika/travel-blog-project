@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="country-page.css">
     <link rel="stylesheet" href="travel-blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,28 +17,74 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 </head>
+<header>
+        <nav class="navbar">
+            <div class="nav container">
+                <a class="navbar-brand" href="travel-blog.html"><img src="images/hiking.png" alt="Travel" width="30" height="24"></a>
+                    <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#gallery">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestions.html">Suggestions</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
 <body>
-    <div class="header">
+    <div class="heading">
         <h2>Austria</h2>
     </div>
-     <section id="country-gallery">
-        <img src="images/austria-nature.jpg" title="Hallstatt">
-        <img src="images/austria-city.jpg" title="Vienna">
-        <img src="images/austria-3.jpg" title="Alpine Cow">
-        <img src="images/austria-4.jpg" title="Tirol">
-        <img src="images/austria-5.jpg" title="Salzburg">
-        <img src="images/austria-6.jpg" title="Wiener Justizpalast">
-    </section>
-    <section id="modal">
-        <section id="modalContent">
-            <img src="images/austria-nature.jpg" id="bigImage">
-            <p>Hallstatt</p>
-            <span id="closeButton">&#10006;</span>
-        </section>
-    </section>
-    <p class="country-description">Austria is a destination that enchants visitors with its combination of natural beauty, cultural richness, and historic charm. The country’s Alpine landscapes are a paradise for outdoor enthusiasts, offering skiing in world-renowned resorts during winter and hiking through lush mountain trails in the summer. Villages like Hallstatt, with its picturesque lakeside setting, showcase Austria’s serene beauty, while its clean and tranquil cities provide a perfect blend of history and modernity. Visitors often marvel at Vienna's grand architecture and cultural scene, which includes the iconic Schönbrunn Palace and an unparalleled classical music tradition, making it a haven for art and music lovers. <br>
-    Beyond its landscapes and landmarks, Austria offers a culinary and lifestyle experience that’s hard to match. Traditional dishes like Wiener Schnitzel, Apfelstrudel, and the rich Sachertorte reflect the country’s culinary heritage. Vienna’s famous coffeehouses provide a warm and inviting atmosphere for relaxation and conversation. Meanwhile, its efficient transport system and reputation for safety make Austria an ideal destination for stress-free exploration. Whether you’re strolling through Salzburg's baroque streets or enjoying the vibrant cultural festivals, Austria promises an unforgettable experience blending elegance, history, and natural splendor.</p>
-    
+     <section class="country-content">
+         <section id="country-gallery">
+            <img src="images/austria-nature.jpg" title="Hallstatt">
+            <img src="images/austria-city.jpg" title="Vienna">
+            <img src="images/austria-3.jpg" title="Alpine Cow">
+            <img src="images/austria-4.jpg" title="Tirol">
+            <img src="images/austria-5.jpg" title="Salzburg">
+            <img src="images/austria-6.jpg" title="Wiener Justizpalast">
+             </section>
+             <section id="modal">
+            <section id="modalContent">
+                <img src="images/austria-nature.jpg" id="bigImage">
+                <p>Hallstatt</p>
+                <span id="closeButton">&#10006;</span>
+            </section>
+             </section>
+             <div>
+             <p>Current weather in Austria</p>
+             </div>
+             <section class="description-text-section">
+             <p class="description-text">Austria is a destination that enchants visitors with its combination of natural beauty, cultural richness, and historic charm. The country&#39;s Alpine landscapes are a paradise for outdoor enthusiasts, offering skiing in world-renowned resorts during winter and hiking through lush mountain trails in the summer. Villages like Hallstatt, with its picturesque lakeside setting, showcase Austria&#39;s serene beauty, while its clean and tranquil cities provide a perfect blend of history and modernity. Visitors often marvel at Vienna's grand architecture and cultural scene, which includes the iconic Schönbrunn Palace and an unparalleled classical music tradition, making it a haven for art and music lovers. <br>
+             Beyond its landscapes and landmarks, Austria offers a culinary and lifestyle experience that&#39;s hard to match. Traditional dishes like Wiener Schnitzel, Apfelstrudel, and the rich Sachertorte reflect the country&#39;s culinary heritage. Vienna&#39;s famous coffeehouses provide a warm and inviting atmosphere for relaxation and conversation. Meanwhile, its efficient transport system and reputation for safety make Austria an ideal destination for stress-free exploration. Whether you&#39;re strolling through Salzburg's baroque streets or enjoying the vibrant cultural festivals, Austria promises an unforgettable experience blending elegance, history, and natural splendor.</p>
+             </section>
+     </section>
+    <footer>
+        <div class="social-media">
+    <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a class="nav-link" href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i> Twitter
+    </a>
+    <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <a class="nav-link" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+
+        <p>&copy; 2024 Zoey M. Romeo&#39;s Travel Blog. All Rights Reserved.</p>
+        
+    </footer>
     <script src="travel-blog-gallery.js"></script>
 </body>
 </html>
