@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="country-page.css">
     <link rel="stylesheet" href="travel-blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<header>
+        <nav class="navbar">
+            <div class="nav container">
+                <a class="navbar-brand" href="travel-blog.html"><img src="images/hiking.png" alt="Travel" width="30" height="24"></a>
+                    <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#gallery">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestions.html">Suggestions</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+<body data-city="Warsaw">
+    <div class="heading">
+        <h2>Poland</h2>
+    </div>
+         <section id="country-gallery">
+            <img src="images/poland-nature.jpg" title="Morskie Oko">
+            <img src="images/poland-city.jpg" title="Gdansk">
+            <img src="images/poland-3.jpg" title="Szklarska Poręba">
+            <img src="images/poland-4.jpg" title="Gdansk">
+            <img src="images/poland-5.jpg" title="Warsaw">
+            <img src="images/poland-6.jpg" title="Morskie Oko">
+             </section>
+             <section id="modal">
+            <section id="modalContent">
+                <img src="images/poland-nature.jpg" id="bigImage">
+                <p>Morskie Oko</p>
+                <span id="closeButton">&#10006;</span>
+            </section>
+             </section>
+             
+            <section class="country-content">
+                <div class="weather">
+                    <p>Weather in <span id="city"></span></p>
+                    <div id="icon" class="icon"></div>
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+                 <div class="description-text-section">
+                 <p class="description-text">Poland is a destination that delights visitors with its blend of historic charm, natural beauty, and vibrant culture. From the bustling squares of Kraków to the serene shores of the Baltic Sea, the country offers a wide range of experiences. Poland's medieval towns and castles, like the UNESCO-listed Malbork Castle and the historic Old Town of Warsaw, reveal its deep connection to European history. Meanwhile, the Tatra Mountains and Białowieża Forest invite outdoor enthusiasts to explore their pristine landscapes. <br> Poland's cultural richness shines through its music, art, and traditions. Classical music enthusiasts will be drawn to the legacy of Chopin, while folk festivals celebrate the country&#39;s vibrant heritage. Polish cuisine offers hearty and comforting flavors, with dishes like pierogi, bigos, and żurek reflecting a love for tradition and family gatherings. For those with a sweet tooth, treats like paczki and sernik are a must-try. <br>Modern cities like Warsaw and Gdańsk balance innovation with history, showcasing Poland&#39;s resilience and progress. Visitors can immerse themselves in world-class museums, such as the Museum of the Second World War, or enjoy the dynamic nightlife of thriving urban centers. Whether you're wandering through Wrocław's charming market square, marveling at the stunning Wieliczka Salt Mine, or relaxing in a countryside village, Poland promises an experience filled with warmth, discovery, and unforgettable stories.</p>
+                 </div>
+                 </section>
+    <footer>
+        <div class="social-media">
+    <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a class="nav-link" href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i> Twitter
+    </a>
+    <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <a class="nav-link" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+        <p>&copy; 2024 Zoey M. Romeo&#39;s Travel Blog. All Rights Reserved.</p>        
+    </footer>
+    <script src="travel-blog-gallery.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

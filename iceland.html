@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iceland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="country-page.css">
     <link rel="stylesheet" href="travel-blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<header>
+        <nav class="navbar">
+            <div class="nav container">
+                <a class="navbar-brand" href="travel-blog.html"><img src="images/hiking.png" alt="Travel" width="30" height="24"></a>
+                    <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#gallery">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestions.html">Suggestions</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+<body data-city="Reykjavík">
+    <div class="heading">
+        <h2>Iceland</h2>
+    </div>
+         <section id="country-gallery">
+            <img src="images/iceland-nature.jpg" title="Iceland">
+            <img src="images/iceland-city.jpg" title="Reykjavík">
+            <img src="images/iceland-3.jpg" title="Skogafoss Waterfall">
+            <img src="images/iceland-4.jpg" title="Reykjavík">
+            <img src="images/iceland-5.jpg" title="Vik">
+            <img src="images/iceland-6.jpg" title="Vik">
+             </section>
+             <section id="modal">
+            <section id="modalContent">
+                <img src="images/iceland-nature.jpg" id="bigImage">
+                <p>Iceland</p>
+                <span id="closeButton">&#10006;</span>
+            </section>
+             </section>
+             
+            <section class="country-content">
+                <div class="weather">
+                    <p>Weather in <span id="city"></span></p>
+                    <div id="icon" class="icon"></div>
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+                 <div class="description-text-section">
+                 <p class="description-text">Iceland mesmerizes visitors with its otherworldly landscapes, rich folklore, and deep connection to nature. Known as the "Land of Fire and Ice," this island nation is home to dramatic contrasts: towering glaciers, steaming geysers, and rugged lava fields coexist in a setting that feels almost magical. Iconic natural wonders like the Blue Lagoon, Gullfoss waterfall, and the geothermal fields of Haukadalur draw adventurers from around the globe. For those seeking the extraordinary, witnessing the Northern Lights dance across Iceland's skies is an unforgettable experience. <br>Beyond its breathtaking scenery, Iceland offers a cultural richness rooted in Norse traditions and modern creativity. Reykjavík, the vibrant capital, blends cosmopolitan charm with small-town warmth, featuring colorful architecture, lively music festivals, and a thriving culinary scene. Traditional dishes like lamb stew, fresh seafood, and the unique skyr yogurt reflect the country's Nordic heritage, while locally brewed beers and spirits provide a taste of Iceland's innovative side. <br>Iceland's commitment to sustainability and its welcoming, close-knit communities make exploring the island a delight. Whether trekking across glacier-covered volcanoes, soaking in a natural hot spring, or learning about the sagas of Viking lore, Iceland promises an adventure like no other, where nature and culture come together in perfect harmony.</p>
+                 </div>
+                 </section>
+
+    <footer>
+        <div class="social-media">
+    <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a class="nav-link" href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i> Twitter
+    </a>
+    <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <a class="nav-link" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+
+        <p>&copy; 2024 Zoey M. Romeo&#39;s Travel Blog. All Rights Reserved.</p>
+        
+    </footer>
+    <script src="travel-blog-gallery.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

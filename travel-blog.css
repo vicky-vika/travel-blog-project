@@ -28,6 +28,7 @@ body {
   font-family: "Epilogue", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
+  /* background-color: rgb(142, 163, 159, 0.3); */
   margin: 0;
   padding: var(--spacing-medium);
 }
@@ -53,7 +54,7 @@ body {
   color: var(--primary-color);
 }
 
-section {
+section:not(:last-of-type) {
   margin-bottom: 50px;
 }
 
@@ -63,7 +64,7 @@ section {
   display: flex;
   align-items: flex-start;
   justify-content: end;
-  padding-right: 2rem;
+  margin-right: 10rem;
   margin-top: 20px;
 }
 
@@ -95,7 +96,7 @@ h3 {
 .about {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(142, 163, 159, 0.4);
+  /* background-color: rgb(142, 163, 159, 0.3); */
   padding: 30px 0 30px 0;
 }
 .about img {
@@ -111,7 +112,7 @@ h3 {
 }
 
 .gallery-cont {
-  background-color: rgb(142, 163, 159, 0.4);
+  /* background-color: rgb(142, 163, 159, 0.3); */
   padding: 30px 0 30px 0;
 }
 
@@ -120,7 +121,7 @@ blockquote {
   margin: 0 20px 20px 20px;
   padding: 10px;
   border-left: 4px solid var(--primary-color);
-  background-color: rgb(142, 163, 159, 0.5);
+  background-color: rgb(142, 163, 159, 0.3);
 }
 
 blockquote cite {
@@ -166,17 +167,26 @@ blockquote cite {
 }
 
 .picture-link .text-container {
+  text-align: end;
   position: absolute;
-  top: 90%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+  width: 70%;
+  top: 95%;
+  left: 70%;
+  transform: translate(-70%, -70%);
+}
+
+.timestamp {
+  font-size: var(--font-small);
+  border-radius: 10px;
+  background-color: rgb(142, 163, 159, 0.3);
+  color: var(--primary-color);
 }
 
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(142, 163, 159, 0.5);
+  /* background-color: rgb(142, 163, 159, 0.3); */
   padding: 10px;
   color: var(--accent-color);
 }
@@ -193,7 +203,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
-  section {
+  section:not(:last-of-type) {
     margin-bottom: 20px;
   }
   .hero {
@@ -202,7 +212,7 @@ footer p {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  section {
+  section:not(:last-of-type) {
     margin-bottom: 30px;
   }
   .gallery {
@@ -216,21 +226,12 @@ footer p {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  section {
+  section:not(:last-of-type) {
     margin-bottom: 40px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .hero {
-    /* height: 400px; */
-  }
-}
-
 @media (min-width: 1367px) {
-  .hero {
-    /* height: 600px; */
-  }
   .gallery img {
     max-width: 300px;
   }
@@ -240,4 +241,32 @@ footer p {
   .gallery img {
     max-width: 400px;
   }
+}
+
+/* Form */
+#suggestionForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--accent-color);
 }

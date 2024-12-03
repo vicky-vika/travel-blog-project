@@ -26,7 +26,7 @@
                         <a class="nav-link" href="travel-blog.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="travel-blog.html#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="travel-blog.html#gallery">Destinations</a>
@@ -38,11 +38,10 @@
             </div>
         </nav>
     </header>
-<body>
+<body data-city="Vienna">
     <div class="heading">
         <h2>Austria</h2>
     </div>
-     <section class="country-content">
          <section id="country-gallery">
             <img src="images/austria-nature.jpg" title="Hallstatt">
             <img src="images/austria-city.jpg" title="Vienna">
@@ -58,14 +57,20 @@
                 <span id="closeButton">&#10006;</span>
             </section>
              </section>
-             <div>
-             <p>Current weather in Austria</p>
-             </div>
-             <section class="description-text-section">
-             <p class="description-text">Austria is a destination that enchants visitors with its combination of natural beauty, cultural richness, and historic charm. The country&#39;s Alpine landscapes are a paradise for outdoor enthusiasts, offering skiing in world-renowned resorts during winter and hiking through lush mountain trails in the summer. Villages like Hallstatt, with its picturesque lakeside setting, showcase Austria&#39;s serene beauty, while its clean and tranquil cities provide a perfect blend of history and modernity. Visitors often marvel at Vienna's grand architecture and cultural scene, which includes the iconic Schönbrunn Palace and an unparalleled classical music tradition, making it a haven for art and music lovers. <br>
-             Beyond its landscapes and landmarks, Austria offers a culinary and lifestyle experience that&#39;s hard to match. Traditional dishes like Wiener Schnitzel, Apfelstrudel, and the rich Sachertorte reflect the country&#39;s culinary heritage. Vienna&#39;s famous coffeehouses provide a warm and inviting atmosphere for relaxation and conversation. Meanwhile, its efficient transport system and reputation for safety make Austria an ideal destination for stress-free exploration. Whether you&#39;re strolling through Salzburg's baroque streets or enjoying the vibrant cultural festivals, Austria promises an unforgettable experience blending elegance, history, and natural splendor.</p>
-             </section>
-     </section>
+             
+            <section class="country-content">
+                <div class="weather">
+                    <p>Weather in <span id="city"></span></p>
+                    <div id="icon" class="icon"></div>
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+                 <div class="description-text-section">
+                 <p class="description-text">Austria is a destination that enchants visitors with its combination of natural beauty, cultural richness, and historic charm. The country&#39;s Alpine landscapes are a paradise for outdoor enthusiasts, offering skiing in world-renowned resorts during winter and hiking through lush mountain trails in the summer. Villages like Hallstatt, with its picturesque lakeside setting, showcase Austria&#39;s serene beauty, while its clean and tranquil cities provide a perfect blend of history and modernity. Visitors often marvel at Vienna's grand architecture and cultural scene, which includes the iconic Schönbrunn Palace and an unparalleled classical music tradition, making it a haven for art and music lovers. <br>
+                 Beyond its landscapes and landmarks, Austria offers a culinary and lifestyle experience that&#39;s hard to match. Traditional dishes like Wiener Schnitzel, Apfelstrudel, and the rich Sachertorte reflect the country&#39;s culinary heritage. Vienna&#39;s famous coffeehouses provide a warm and inviting atmosphere for relaxation and conversation. Meanwhile, its efficient transport system and reputation for safety make Austria an ideal destination for stress-free exploration. Whether you&#39;re strolling through Salzburg's baroque streets or enjoying the vibrant cultural festivals, Austria promises an unforgettable experience blending elegance, history, and natural splendor.</p>
+                 </div>
+                 </section>
+
     <footer>
         <div class="social-media">
     <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
@@ -81,10 +86,10 @@
         <i class="bi bi-linkedin"></i> LinkedIn
     </a>
 </div>
-
         <p>&copy; 2024 Zoey M. Romeo&#39;s Travel Blog. All Rights Reserved.</p>
         
     </footer>
     <script src="travel-blog-gallery.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>

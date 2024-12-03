@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scotland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="country-page.css">
     <link rel="stylesheet" href="travel-blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<header>
+        <nav class="navbar">
+            <div class="nav container">
+                <a class="navbar-brand" href="travel-blog.html"><img src="images/hiking.png" alt="Travel" width="30" height="24"></a>
+                    <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-blog.html#gallery">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestions.html">Suggestions</a>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+
+<body data-city="Edinburgh">
+    <div class="heading">
+        <h2>Scotland</h2>
+    </div>
+         <section id="country-gallery">
+            <img src="images/scotland-nature.jpg" title="Highlands">
+            <img src="images/scotland-city.jpg" title="Edinburgh">
+            <img src="images/scotland-3.jpg" title="Glasgow">
+            <img src="images/scotland-4.jpg" title="Fort William">
+            <img src="images/scotland-5.jpg" title="Edinburgh">
+            <img src="images/scotland-6.jpg" title="Glenfinnan">
+             </section>
+             <section id="modal">
+            <section id="modalContent">
+                <img src="images/scotland-nature.jpg" id="bigImage">
+                <p>Highlands</p>
+                <span id="closeButton">&#10006;</span>
+            </section>
+             </section>
+             
+            <section class="country-content">
+                <div class="weather">
+                    <p>Weather in <span id="city"></span></p>
+                    <div id="icon" class="icon"></div>
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+                 <div class="description-text-section">
+                 <p class="description-text">Scotland captivates visitors with its rugged landscapes, rich history, and vibrant culture. The country&#39;s dramatic Highlands, with their misty mountains, glistening lochs, and sweeping glens, offer an unforgettable retreat for nature lovers. From the iconic Loch Ness to the majestic Isle of Skye, Scotland's natural beauty is as diverse as it is breathtaking. Historic cities like Edinburgh, with its medieval Old Town and the imposing Edinburgh Castle, provide a glimpse into Scotland's storied past, while Glasgow&#39;s lively arts scene and modern flair showcase the country's contemporary energy.<br>Beyond its scenery and history, Scotland offers a warm and welcoming cultural experience. Traditional music and dance, best experienced at a lively ceilidh, bring its heritage to life. Culinary delights like haggis, Cullen skink, and buttery shortbread are paired perfectly with a dram of world-famous Scotch whisky, making dining in Scotland a unique pleasure. Quaint villages, dramatic castles, and festivals like the Edinburgh Fringe create an atmosphere where tradition and creativity coexist harmoniously. Whether exploring the historic cobbled streets, hiking the windswept trails, or tracing your ancestry, Scotland promises a journey filled with wonder, warmth, and unforgettable memories.</p>
+                 </div>
+                 </section>
+    <footer>
+        <div class="social-media">
+    <a class="nav-link" href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i> Facebook
+    </a>
+    <a class="nav-link" href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i> Twitter
+    </a>
+    <a class="nav-link" href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <a class="nav-link" href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+
+        <p>&copy; 2024 Zoey M. Romeo&#39;s Travel Blog. All Rights Reserved.</p>
+        
+    </footer>
+    <script src="travel-blog-gallery.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
