@@ -98,7 +98,7 @@ body.blur .country-description {
 
 .description-text {
   text-align: end;
-  width: 95%;
+  width: 100%;
   padding-right: 0;
 }
 
@@ -107,7 +107,9 @@ body.blur .country-description {
   width: 100%;
   max-width: 200px;
   align-self: self-start;
-  font-family: "Epilogue", sans-serif;
+  /* font-family: "Epilogue", sans-serif; */
+  font-family: "Libre Caslon Display", serif;
+  font-size: var(--font-medium);
   background-color: rgb(142, 163, 159, 0.3);
   color: var(--text-color);
   border-radius: 10px;
